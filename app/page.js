@@ -185,16 +185,20 @@ function classNames(...classes) {
 export default function Home() {
   return (
     <main>
-      <div class="flex bg-gray-200">
+      <div class="flex bg-gray-200 font-Macan">
         <div class="w-2/3 bg-white p-6">
-          <header className="bg-white">
+          <header>
             <nav
               className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
               aria-label="Global"
             >
               <div className="flex lg:flex-1">
-                <a href="#" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Your Company</span>
+                <a
+                  href="https://geckoengage.com"
+                  target="_blank"
+                  className="-m-1.5 p-1.5"
+                >
+                  <span className="sr-only">Gecko</span>
                   <img
                     className="h-8 w-auto"
                     src="https://uploads-ssl.webflow.com/647eb7d38084889ee9385946/647eb7d38084889ee9385965_Full-Word-Blue-Left.svg"
@@ -209,26 +213,27 @@ export default function Home() {
                   target="_blank"
                   className="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900"
                 >
-                  Log-In
+                  Log-in
                 </a>
                 <a
                   href="#"
-                  className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-md bg-geckoBlue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-geckoSky hover:text-geckoBlue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-geckoBlue"
                 >
-                  Schedule A Demo!!
+                  Schedule a Demo
                 </a>
               </div>
             </nav>
           </header>
-          <div id="hero" className="bg-white py-24 sm:py-32">
+          <div id="hero" className="py-8 sm:py-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:text-center">
-                <h2 className="text-base font-semibold leading-7 text-indigo-600">
-                  Deploy faster
-                </h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Everything you need to deploy your app
-                </p>
+                <h4 className="text-base font-semibold leading-7 text-geckoBlue uppercase">
+                  Live Demo
+                </h4>
+                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Turn your institution's website into an AI-powered chatbot in
+                  less than 60 seconds
+                </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Quis tellus eget adipiscing convallis sit sit eget aliquet
                   quis. Suspendisse eget egestas a elementum pulvinar et feugiat
@@ -240,7 +245,7 @@ export default function Home() {
                   {features.map((feature) => (
                     <div key={feature.name} className="relative pl-16">
                       <dt className="text-base font-semibold leading-7 text-gray-900">
-                        <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                        <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-geckoBlue">
                           <feature.icon
                             className="h-6 w-6 text-white"
                             aria-hidden="true"
@@ -257,29 +262,30 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="cta" className="bg-white">
-            <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-              <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-                <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Boost your productivity today.
+          <div id="cta">
+            <div className="mx-auto max-w-7xl py-8 sm:py-16 sm:px-6  lg:px-8">
+              <div className="relative isolate overflow-hidden bg-geckoBlue px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+                <h2 className="mx-auto max-w-2xl text-2xl font-bold tracking-tight text-white sm:text-3xl">
+                  Reckon this could work for your institution?
                 </h2>
                 <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-                  Incididunt sint fugiat pariatur cupidatat consectetur sit
-                  cillum anim id veniam aliqua proident excepteur commodo do ea.
+                  Schedule a 30-minute call with our team. We’ll show you how
+                  our tech works, understand your current processes and help you
+                  decide on a suitable solution.
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-geckoBlue shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
-                    Get started
+                    Schedule a Demo
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-sm font-semibold leading-6 text-white"
                   >
                     Learn more <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
                 <svg
                   viewBox="0 0 1024 1024"
@@ -290,8 +296,9 @@ export default function Home() {
                     cx={512}
                     cy={512}
                     r={512}
-                    fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
-                    fillOpacity="0.7"
+                    // fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
+                    fill="#8de971"
+                    // fillOpacity="0.7"
                   />
                   <defs>
                     <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
@@ -308,11 +315,11 @@ export default function Home() {
             className="relative isolate bg-white pb-32 pt-24 sm:pt-32"
           >
             <div
-              className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+              className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-2xl"
               aria-hidden="true"
             >
               <div
-                className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+                className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-geckoBlue to-geckoGreen"
                 style={{
                   clipPath:
                     "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
@@ -320,11 +327,11 @@ export default function Home() {
               />
             </div>
             <div
-              className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
+              className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-2xl sm:pt-40 xl:justify-end"
               aria-hidden="true"
             >
               <div
-                className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+                className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-geckoBlue to-geckoGreen xl:ml-0 xl:mr-[calc(50%-12rem)]"
                 style={{
                   clipPath:
                     "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
@@ -333,7 +340,7 @@ export default function Home() {
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-xl text-center">
-                <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
+                <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#004c97]">
                   Testimonials
                 </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -422,7 +429,7 @@ export default function Home() {
                     Can’t find the answer you’re looking for? Reach out to our{" "}
                     <a
                       href="#"
-                      className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      className="font-semibold text-geckoBlue hover:underline"
                     >
                       customer support
                     </a>{" "}
