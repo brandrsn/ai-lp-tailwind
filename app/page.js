@@ -1,35 +1,35 @@
 import Image from "next/image";
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  NoSymbolIcon,
+  CheckCircleIcon,
+  MoonIcon,
+  BuildingOffice2Icon,
 } from "@heroicons/react/24/outline";
 
 const features = [
   {
-    name: "Push to deploy",
+    name: "Requires zero maintenance",
     description:
       "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
-    icon: CloudArrowUpIcon,
+    icon: NoSymbolIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Always up-to-date",
     description:
       "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
-    icon: LockClosedIcon,
+    icon: CheckCircleIcon,
   },
   {
-    name: "Simple queues",
-    description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
-    icon: ArrowPathIcon,
-  },
-  {
-    name: "Advanced security",
+    name: "Assists students 24/7",
     description:
       "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
-    icon: FingerPrintIcon,
+    icon: MoonIcon,
+  },
+  {
+    name: "Cross-departmental",
+    description:
+      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+    icon: BuildingOffice2Icon,
   },
 ];
 const navigation = {
@@ -109,10 +109,11 @@ const featuredTestimonial = {
   body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
   author: {
     name: "Brenna Goyette",
-    handle: "brennagoyette",
+    id: "brennagoyette",
+    institution: "Universy of Glasgow",
     imageUrl:
       "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
-    logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
+    logoUrl: "../images/glasgow_colour.png",
   },
 };
 const testimonials = [
@@ -122,9 +123,20 @@ const testimonials = [
         body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
         author: {
           name: "Leslie Alexander",
-          handle: "lesliealexander",
+          id: "lesliealexander",
+          institution: "University of California - Irvine",
           imageUrl:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+            "https://media.licdn.com/dms/image/C4E0BAQGzuO5pfplanQ/company-logo_200_200/0/1663661768903?e=1701302400&v=beta&t=iqyjPeCyZ5IVk6bWS4VRXkJxOkUWaxZpdQ22BEJmLyc",
+        },
+      },
+      {
+        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum excepturi rerum voluptatem minus harum.",
+        author: {
+          name: "Leonard Krasner",
+          id: "leonardkrasner",
+          institution: "Santa Monica College",
+          imageUrl:
+            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
       },
       // More testimonials...
@@ -134,7 +146,8 @@ const testimonials = [
         body: "Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.",
         author: {
           name: "Lindsay Walton",
-          handle: "lindsaywalton",
+          id: "lindsaywalton",
+          institution: "University of Birmingham",
           imageUrl:
             "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
@@ -145,10 +158,11 @@ const testimonials = [
   [
     [
       {
-        body: "Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.",
+        body: "Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti molestiae ipsum perferendis recusandae saepe corrupti.",
         author: {
           name: "Tom Cook",
-          handle: "tomcook",
+          id: "tomcook",
+          institution: "Illinois Institute of Tech",
           imageUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
@@ -159,17 +173,42 @@ const testimonials = [
       {
         body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
         author: {
-          name: "Leonard Krasner",
-          handle: "leonardkrasner",
+          name: "Michelle Jones",
+          id: "michellejones",
+          institution: "Goldsmiths University",
           imageUrl:
             "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
       },
-      // More testimonials...
+      {
+        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum excepturi rerum voluptatem minus harum..",
+        author: {
+          name: "Gary Smith",
+          id: "garysmith",
+          institution: "Arapahoe Community College",
+          imageUrl:
+            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+      },
     ],
   ],
 ];
 const faqs = [
+  {
+    question: "How do you make holy water?",
+    answer:
+      "You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "How do you make holy water?",
+    answer:
+      "You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "How do you make holy water?",
+    answer:
+      "You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
   {
     question: "How do you make holy water?",
     answer:
@@ -185,7 +224,7 @@ function classNames(...classes) {
 export default function Home() {
   return (
     <main>
-      <div class="flex bg-gray-200 font-Macan">
+      <div class="flex  font-Macan relative">
         <div class="w-2/3 bg-white p-6">
           <header>
             <nav
@@ -219,7 +258,7 @@ export default function Home() {
                   href="#"
                   className="rounded-md bg-geckoBlue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-geckoSky hover:text-geckoBlue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-geckoBlue"
                 >
-                  Schedule a Demo
+                  Schedule an AI consultation
                 </a>
               </div>
             </nav>
@@ -230,24 +269,24 @@ export default function Home() {
                 <h4 className="text-base font-semibold leading-7 text-geckoBlue uppercase">
                   Live Demo
                 </h4>
-                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Turn your institution's website into an AI-powered chatbot in
-                  less than 60 seconds
+                <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                  Turn your institution's website into an AI chatbot in less
+                  than 60 seconds
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Quis tellus eget adipiscing convallis sit sit eget aliquet
-                  quis. Suspendisse eget egestas a elementum pulvinar et feugiat
-                  blandit at. In mi viverra elit nunc.
+                  Try our interactive demo and build a chatbot that's unique to
+                  your school
                 </p>
               </div>
+
               <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                 <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                   {features.map((feature) => (
                     <div key={feature.name} className="relative pl-16">
                       <dt className="text-base font-semibold leading-7 text-gray-900">
-                        <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-geckoBlue">
+                        <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-geckoGreen">
                           <feature.icon
-                            className="h-6 w-6 text-white"
+                            className="h-6 w-6 text-geckoBlue"
                             aria-hidden="true"
                           />
                         </div>
@@ -265,27 +304,30 @@ export default function Home() {
           <div id="cta">
             <div className="mx-auto max-w-7xl py-8 sm:py-16 sm:px-6  lg:px-8">
               <div className="relative isolate overflow-hidden bg-geckoBlue px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+                <p className="text-lg  mb-2 font-semibold leading-8 text-geckoGreen">
+                  Intrigued about how AI could help your school?
+                </p>
                 <h2 className="mx-auto max-w-2xl text-2xl font-bold tracking-tight text-white sm:text-3xl">
-                  Reckon this could work for your institution?
+                  Schedule a personalized consultation today
                 </h2>
-                <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-                  Schedule a 30-minute call with our team. We’ll show you how
-                  our tech works, understand your current processes and help you
-                  decide on a suitable solution.
+                <p className="mx-auto mt-6 max-w-xl text-lg leading-8  text-gray-200">
+                  Book a 30-minute slot with our team. We’ll chat through your
+                  current processes, show how our tech works, and help identify
+                  your next steps.
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
                     href="#"
                     className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-geckoBlue shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
-                    Schedule a Demo
+                    Schedule a consultation now
                   </a>
-                  {/* <a
+                  <a
                     href="#"
-                    className="text-sm font-semibold leading-6 text-white"
+                    className="text-sm font-semibold leading-6 text-gray-200 hover:text-white"
                   >
-                    Learn more <span aria-hidden="true">→</span>
-                  </a> */}
+                    Send me more info <span aria-hidden="true">→</span>
+                  </a>
                 </div>
                 <svg
                   viewBox="0 0 1024 1024"
@@ -312,7 +354,7 @@ export default function Home() {
           </div>
           <div
             id="testimonials"
-            className="relative isolate bg-white pb-32 pt-24 sm:pt-32"
+            className="relative isolate pb-32 pt-24 sm:pt-32"
           >
             <div
               className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-2xl"
@@ -340,11 +382,11 @@ export default function Home() {
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-xl text-center">
-                <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#004c97]">
-                  Testimonials
+                <h2 className="text-lg font-semibold leading-8 tracking-tight text-geckoBlue ">
+                  We work with the finest minds in HigherEd
                 </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  We have worked with thousands of amazing people
+                  Here's what our partners had to say
                 </p>
               </div>
               <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
@@ -352,7 +394,7 @@ export default function Home() {
                   <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-gray-900">
                     <p>{`“${featuredTestimonial.body}”`}</p>
                   </blockquote>
-                  <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
+                  <figcaption className="flex items-center gap-x-4 border-t border-geckoSky px-6 py-4">
                     <img
                       className="h-10 w-10 flex-none rounded-full bg-gray-50"
                       src={featuredTestimonial.author.imageUrl}
@@ -362,11 +404,12 @@ export default function Home() {
                       <div className="font-semibold">
                         {featuredTestimonial.author.name}
                       </div>
-                      <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
+                      <div className="text-geckoBlue">{`${featuredTestimonial.author.institution}`}</div>
                     </div>
                     <img
                       className="h-10 w-auto flex-none"
                       src={featuredTestimonial.author.logoUrl}
+                      // src="../public/images/glasgow_colour.png"
                       alt=""
                     />
                   </figcaption>
@@ -390,7 +433,7 @@ export default function Home() {
                       >
                         {column.map((testimonial) => (
                           <figure
-                            key={testimonial.author.handle}
+                            key={testimonial.author.id}
                             className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
                           >
                             <blockquote className="text-gray-900">
@@ -406,7 +449,7 @@ export default function Home() {
                                 <div className="font-semibold">
                                   {testimonial.author.name}
                                 </div>
-                                <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                                <div className="text-geckoBlue">{`${testimonial.author.institution}`}</div>
                               </div>
                             </figcaption>
                           </figure>
@@ -418,20 +461,21 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="faqs" className="bg-white">
-            <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
+          <div id="faqs">
+            <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-28">
               <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                 <div className="lg:col-span-5">
                   <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
-                    Frequently asked questions
+                    Questions we're often asked
                   </h2>
                   <p className="mt-4 text-base leading-7 text-gray-600">
                     Can’t find the answer you’re looking for? Reach out to our{" "}
                     <a
-                      href="#"
+                      href="https://www.geckoengage.com/about/contact/"
+                      target="_blank"
                       className="font-semibold text-geckoBlue hover:underline"
                     >
-                      customer support
+                      Customer Success
                     </a>{" "}
                     team.
                   </p>
@@ -453,7 +497,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <footer className="bg-white">
+          <footer id="footer">
             <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
               <nav
                 className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
@@ -483,13 +527,24 @@ export default function Home() {
                 ))}
               </div>
               <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-                &copy; 2020 Your Company, Inc. All rights reserved.
+                &copy; 2023 Gecko. All rights reserved.
               </p>
             </div>
           </footer>
         </div>
-        <div class="relative h-full w-1/3 p-6">
-          <div class="h-full w-full bg-red-300"></div>
+        <div id="demo" class="fixed right-0 bg-gray-200 h-screen w-1/3">
+          {/* <div className=" relative mx-auto px-6 "> */}
+          <div className=" absolute bottom-0 w-full mx-auto ">
+            <div className="  w-11/12 mx-auto py-4 px-6 bg-slate-600 rounded-t-lg">
+              <p className="text-white text-sm">
+                Note: this demo is designed to give you a flavour of what's
+                possible with AI. Gecko’s platform has advanced settings which
+                can constrain answers, focus on certain topics and give your AI
+                a distinct personality. Reach out for more information.
+              </p>
+            </div>
+          </div>
+          {/* </div> */}
         </div>
       </div>
     </main>
