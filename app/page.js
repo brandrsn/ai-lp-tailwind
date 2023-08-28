@@ -192,12 +192,12 @@ const faqs = [
     question:
       "How is this different to using ChatGPT directly? What magic does Gecko provide?",
     answer:
-      "When used out the box, ChatGPT is only knowledgeable about events prior to September 2021, and it is prone to 'hallucinating' (i.e. making up answers). Gecko uses the best bits of ChatGPT, while constraining its knowledgebase to your school's data and adding a layer of control around the messages that are created for students. Finally, ChatGPT isn't the best tool for every scenario, and Gecko leverages additional AI partners for certain tasks where appropriate.",
+      "When used out the box, ChatGPT is only knowledgeable about events prior to September 2021, and it is prone to 'hallucinating' (i.e. making up answers). Gecko uses the best bits of ChatGPT, while constraining its knowledgebase to your school's data and adding a layer of control around the messages that are written for students. Finally, ChatGPT isn't the best tool for every scenario, so Gecko leverages additional AI partners for certain tasks where appropriate.",
   },
   {
     question: "Does this integrate with our existing systems?",
     answer:
-      "ChatGPT may be the new kid on the block, but Gecko's AI chatbot has long been integrated systems from with the main Higher Ed vendors, such as Microsoft, Ellucian, Salesforce and Slate.",
+      "ChatGPT may be the new kid on the block, but Gecko's AI chatbot has long been integrated with systems offered by Higher Ed's top vendors, such as Microsoft, Ellucian, Salesforce and Slate.",
   },
   {
     question: "Where can I learn more about Gecko's chatbot product?",
