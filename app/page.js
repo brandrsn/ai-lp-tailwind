@@ -4,6 +4,7 @@ import {
   CheckCircleIcon,
   MoonIcon,
   BuildingOffice2Icon,
+  MagnifyingGlassCircleIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
@@ -26,10 +27,10 @@ const features = [
     icon: MoonIcon,
   },
   {
-    name: "Cross-departmental",
+    name: "Retains human oversight",
     description:
-      "Students don't care about information siloes, so make every department's content accessible in one place.",
-    icon: BuildingOffice2Icon,
+      "Review every message sent by your bot (in real time!), ensuring your team has full visibility of each conversation.",
+    icon: MagnifyingGlassCircleIcon,
   },
 ];
 const navigation = {
