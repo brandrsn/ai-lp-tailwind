@@ -96,50 +96,46 @@ const navigation = {
   ],
 };
 const featuredTestimonial = {
-  body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
+  body: "The ROI on our bot is way better than we ever expected, and that's backed up by data analytics on the back-end which helps validate our decision to invest with Gecko. 24/7 is key for us, and it was surprisingly easy to integrate.",
   author: {
-    name: "Brenna Goyette",
-    id: "brennagoyette",
-    institution: "Universy of Glasgow",
-    imageUrl:
-      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
-    logoUrl: "../images/glasgow_colour.png",
+    name: "Bryan Jue",
+    id: "bryanjue",
+    institution: "University of California - Irvine",
+    imageUrl: "../images/BryanJue-UCI.jpg",
+    logoUrl: "../images/uci_logo.png",
   },
 };
 const testimonials = [
   [
     [
       {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+        body: "The results so far have been staggering. Pearl bot is not only helping us improve communications with our students but is also freeing up our time, allowing us to have more valuable conversations with students - the conversations that really do require human interaction.",
         author: {
-          name: "Leslie Alexander",
-          id: "lesliealexander",
-          institution: "University of California - Irvine",
-          imageUrl:
-            "https://media.licdn.com/dms/image/C4E0BAQGzuO5pfplanQ/company-logo_200_200/0/1663661768903?e=1701302400&v=beta&t=iqyjPeCyZ5IVk6bWS4VRXkJxOkUWaxZpdQ22BEJmLyc",
+          name: "Essau Tover",
+          id: "essautover",
+          institution: "Santa Monica College",
+          imageUrl: "../images/smc_logo_.jpg",
         },
       },
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum excepturi rerum voluptatem minus harum.",
+        body: "We are so impressed that our chatbot was trained and launched within a few days! The scale of what we can already do with the bot is fantastic, and we’re also really excited about the continued building of skills and knowledge as our chatbot learns over time.",
         author: {
-          name: "Leonard Krasner",
-          id: "leonardkrasner",
-          institution: "Santa Monica College",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Danielle Wedderburn",
+          id: "daniellewedderburn",
+          institution: "Goldsmiths University",
+          imageUrl: "../images/goldsmiths_logo.jpg",
         },
       },
       // More testimonials...
     ],
     [
       {
-        body: "Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.",
+        body: "My experience of implementing the Gecko chatbot has been wonderful. We've never felt confused or on our own, we've had full support through the entire process.",
         author: {
-          name: "Lindsay Walton",
-          id: "lindsaywalton",
-          institution: "University of Birmingham",
-          imageUrl:
-            "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Maria Juarez",
+          id: "mariajuarez",
+          institution: "Amarillo College",
+          imageUrl: "../images/amarillo_logo.png",
         },
       },
       // More testimonials...
@@ -148,36 +144,33 @@ const testimonials = [
   [
     [
       {
-        body: "Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti molestiae ipsum perferendis recusandae saepe corrupti.",
+        body: "The expertise, teaching style and patience shown by Gecko's onboarding team were paramount in guiding us through every step of the implementation process. We were able to fast-track our set-up thanks to their guidance.",
         author: {
-          name: "Tom Cook",
-          id: "tomcook",
-          institution: "Illinois Institute of Tech",
-          imageUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Lesley Pearson",
+          id: "lesleypearson",
+          institution: "Texas Women's University",
+          imageUrl: "../images/twu_logo.png",
         },
       },
       // More testimonials...
     ],
     [
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
+        body: "Our chatbot is an essential part of our team, and being available 24/7 means that customer service doesn’t have to be sacrificed when there is a staffing shortage.",
         author: {
-          name: "Michelle Jones",
-          id: "michellejones",
-          institution: "Goldsmiths University",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Kayce O'Brien",
+          id: "kayceobrien",
+          institution: "Arapahoe Community College",
+          imageUrl: "../images/acc_logo.png",
         },
       },
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum excepturi rerum voluptatem minus harum..",
+        body: "We loved being able to flood the bot with lots of questions and then seeing how we could use those questions to improve our bot. Adding a personality to our bot was great, and we even taught the our bot to sing the Welsh national anthem!",
         author: {
-          name: "Gary Smith",
-          id: "garysmith",
-          institution: "Arapahoe Community College",
-          imageUrl:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Matt Bevan",
+          id: "mattbevan",
+          institution: "Cardiff Met University",
+          imageUrl: "../images/cardiff_met_logo.webp",
         },
       },
     ],
@@ -215,8 +208,8 @@ function classNames(...classes) {
 export default function Home() {
   return (
     <main>
-      <div class="flex  font-Macan relative">
-        <div class="w-2/3 bg-white p-6">
+      <div className="flex  font-Macan relative">
+        <div className="w-2/3 bg-white p-6">
           <header>
             <nav
               className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
@@ -559,7 +552,7 @@ export default function Home() {
             </div>
           </footer>
         </div>
-        <div id="demo" class="fixed right-0 bg-gray-200 h-screen w-1/3">
+        <div id="demo" className="fixed right-0 bg-gray-200 h-screen w-1/3">
           {/* <div className=" relative mx-auto px-6 "> */}
           <div className=" absolute bottom-0 w-full mx-auto ">
             <div className="  w-11/12 mx-auto py-4 px-6 bg-slate-600 rounded-t-lg">
